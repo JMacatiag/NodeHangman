@@ -1,5 +1,4 @@
 var Letter = require("./Letter.js");
-var addArray=[];
 
 
 var Word=function(value){
@@ -11,28 +10,22 @@ var Word=function(value){
 	for(var i=0; i<this.value.length; i++){
 		var add=new Letter.Letter(this.value[i]);
 		this.letters.push(add);
-		// console.log(add);
-		// console.log(add[i]);
-		
+
 	}
 
 
-	this.showLetter=function(){
-		var letterUpperCase=letter.toUpperCase(); 
+	this.done=function(){
 		for(var i=0; i<this.letters.length; i++){
-			if(this.letters[i].show==true){
-				return true;
-			}
-			else{
-				return false;
-			}
-
+			if(this.letters[i].show==false){ return false;}
 		}
+		return true;
 
-	// 	for(var i = 0; i < this.letters.length; i++){
-	// 	if(!this.letters[i].show) return false;
-	// }
-	// return true;
+		
+
+		// 	for(var i = 0; i < this.letters.length; i++){
+		// 	if(!this.letters[i].show) return false;
+		// }
+		// return true;
 
 
 	}
@@ -58,12 +51,14 @@ var Word=function(value){
   	return output;
 }
 
-}
 
-// var word="today is monday";
-// var randomWord=new Word(word);
+}
+var word="today is monday";
+var randomWord=new Word(word);
 // console.log(randomWord.value);
 // console.log(randomWord.guessesMade);
 exports.Word = Word;
+Word(randomWord);
+
 
 

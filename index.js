@@ -3,7 +3,6 @@ var inquirer = require("inquirer");
 var wordArray = ['United States of America', 'Russia', 'Canada', 'Mexico', 'Germany', 'United Kingdom', 'Argentina','Peru','Japan','China','South Korea','Hungary','Sweden','France','Spain']
 var randomWord=wordArray[Math.floor(Math.random() * wordArray.length)];
 var letterGuessed;
-exports.letter;
 console.log(randomWord);
 
 var myWord = new Word.Word(randomWord);
@@ -27,7 +26,7 @@ function play(){
 		}]).then(function(inquirerResponse){ //Game control
 				var inputletter = inquirerResponse.letter; 
 				myWord.findLetter(inputletter); //Check
-					if(myWord.showLetter()){ 
+					if(myWord.done()){ 
 					console.log('Yes! It was ' + myWord.toString() + '!');
 					return; //Winner
 					}

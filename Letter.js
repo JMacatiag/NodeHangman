@@ -11,7 +11,7 @@ function Letter(letter) {
 	}
 
 
-	this.displayToScreen=function(letter){
+	this.displayToScreen=function(){
 		// if true return the value of the character
 		if (this.show){
 		
@@ -23,12 +23,6 @@ function Letter(letter) {
 		}
 	};
 
-	// if character is the same as the value of the letter return true
-	this.compare=function(character){
-		if(character===this.value){
-			this.show=true;
-		}
-	}
 
 
 }
