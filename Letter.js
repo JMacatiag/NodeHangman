@@ -1,5 +1,3 @@
-exports.Letter = Letter;
-
 function Letter(letter) {
 	// sets the value of the character to the character itself
 	this.value=letter;
@@ -10,11 +8,9 @@ function Letter(letter) {
 		this.show=true;
 	}
 
-
 	this.displayToScreen=function(){
 		// if true return the value of the character
 		if (this.show){
-		
 			return(this.value);
 		}
 		// if false return an underline
@@ -22,7 +18,6 @@ function Letter(letter) {
 			return "_ ";
 		}
 	};
-
-
-
 }
+
+exports.Letter = Letter;
