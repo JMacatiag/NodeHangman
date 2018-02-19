@@ -1,0 +1,27 @@
+{
+  "name": "node-hangman",
+  "version": "1.0.0",
+  "description": "hangman game played in the cli",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMacatiag/NodeHangman.git"
+  },
+  "keywords": [
+    "node",
+    "hangman"
+  ],
+  "author": "Jessie Macatiag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMacatiag/NodeHangman/issues"
+  },
+  "homepage": "https://github.com/JMacatiag/NodeHangman#readme"
+}
